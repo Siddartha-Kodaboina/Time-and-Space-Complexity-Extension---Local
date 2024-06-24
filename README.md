@@ -1,6 +1,6 @@
 # Time and Space Complexity Analyzer Extension
 
-![Time and Space Complexity Analyzer](./images/space-time-image.png)
+![Time and Space Complexity Analyzer](./images/time-space-image.png)
 
 ## Overview
 
