@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #loading-container, #no-code {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    #no-code {
+      width: 100%;
+      height: 100vh;
+    }
+    .inner-no-code {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    #no-code img {
+      width: 300px;
+      object-fit: cover;
+    }
+    #graphs {
+      width: 100%;
+      height: 100vh;
+    }
+    .chart-container {
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      height: 250px;
+      border: 1px solid #ddd;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+    }
+    .loader {
+      width: 75px;
+      aspect-ratio: 1;
+      color: rgba(0, 0, 0, 0.7);
+      border: 2px solid;
+      box-sizing: border-box;
+      background: repeating-conic-gradient(#0000 0 90deg, currentColor 0 180deg), repeating-conic-gradient(currentColor 0 90deg, #0000 0 180deg);
+      background-size: 30px 30px;
+      animation: loader-animation 2s infinite;
+    }
+    .loader-text, .no-code-text {
+      font-size: 20px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+    @keyframes loader-animation {
+      100% {
+        background-position: 0px 32px, 16px 0px;
+      }
+    }
+    .inner-graph {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-container">
+    <div class="loader"></div>
+    <h1 class="loader-text">Analyzing...</h1>
+  </div>
+  <div id="no-code">
+    <div class="inner-no-code">
+      <img src="computer-monday.gif" alt="The GIF is here" />
+      <h1 class="no-code-text">The selected text is not code....</h1>
+    </div>
+  </div>
+  <div id="graphs">
+    <div class="inner-graph" id="inner-graph">
+      <div id="time-complexity" class="chart-container">
+        <canvas id="timeComplexityChart"></canvas>
+      </div>
+      <div id="space-complexity" class="chart-container">
+        <canvas id="spaceComplexityChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
