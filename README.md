@@ -1,5 +1,7 @@
 # Time and Space Complexity Analyzer Extension
 
+![Time and Space Complexity Analyzer](./images/space-time-image.png)
+
 ## Overview
 
 The Time and Space Complexity Analyzer extension is a powerful tool designed to help you analyze the time and space complexity of your code. As a user, all you need to do is select the code snippet you want to analyze and click on the extension icon. The tool will then start analyzing the selected code and display the time and space complexities visually on a graph. This extension is ideal for students, coders, and professionals looking to understand and optimize their code's performance.
@@ -59,11 +61,14 @@ npx webpack --mode development
 - The extension will analyze the selected code and display the time and space complexities visually on a graph.
 
 7. **Demo**
+
 For a detailed demonstration on how to use the extension, please visit [Video_URL].
 
 8. **Contributing**
+
 We welcome contributions to enhance the functionality and features of this extension. If you have any suggestions or improvements, please open an issue or submit a pull request.
 
 9. **License**
+
 This project is licensed under the MIT License.
 
