@@ -27,5 +27,8 @@
       "resources": ["dist/bundle.js"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
 }
